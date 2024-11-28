@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 public class Solution {
+
     public int solution(int k, int[,] dungeons) {
         int n = dungeons.GetLength(0);//2차원배열의 행길이를 저장
         bool [] visited = new bool[n];//각 던전 별 방문 기록
