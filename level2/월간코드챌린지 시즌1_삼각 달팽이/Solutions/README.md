@@ -13,7 +13,7 @@
 3. n = 6일 때 result = [1,2,15,3,16,14,4,17,21,13,5,18,19,20,12,6,7,8,9,10,11]
 
 # 풀이
-![examples](https://github.com/user-attachments/assets/25a51201-1ae1-4fc0-b9af-3302f83bf20b)
+![examples](https://github.com/user-attachments/assets/2a32b579-c87d-4213-afd7-59dfaef3e015)
 (출처 : 프로그래머스 월간 코드 챌린지 시즌1 삼각 달팽이)
 
 - **삼각형을 반시계 방향으로 "아래" -> "오른쪽" -> "좌측 대각선 위" 순서로 채우면 큰 삼각형의 세 변(겉 부분)을 전부 채울 수 있다.**
