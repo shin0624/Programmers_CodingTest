@@ -11,21 +11,21 @@ public class Solution {
         {
             for(int j = 0; j< i; j++)//아래 방향
             {
-                x++;//x좌표(행수)를 증가시키며 
-                total[x,y] = num++;//숫자 채워감
+                //x++;//x좌표(행수)를 증가시키며 
+                total[++x,y] = num++;//숫자 채워감
             }
 
             for(int j=0; j <i-1; j++)//우측 방향. 현재 크기에서 한 칸 줄인 크기로 우측 방향 채움
             {
-                y++;//y좌표(열수)를 증가시키며 
-                total[x,y] = num++;//숫자 채워감
+                //y++;//y좌표(열수)를 증가시키며 
+                total[x,++y] = num++;//숫자 채워감
             }
 
             for(int j=0; j<i-2; j++)// 대각선 위 . 현재 크기에서 두 칸 줄인 크기로 위측 방향 채움
             {
-                x--;//x좌표(행수) 감소
-                y--;//y좌표(열수) 감소
-                total[x,y] = num++;//숫자 채워감
+                //x--;//x좌표(행수) 감소
+                //y--;//y좌표(열수) 감소
+                total[--x,--y] = num++;//숫자 채워감
             }
         }
 
@@ -38,10 +38,7 @@ public class Solution {
             }
         }
         return result.ToArray();
-
     }
-
-
     /*
         삼각형을 반시계로 채우는 사이클 : 아래 -> 우 -> 위
         n=4일때 : 아래->우->위 방향에서 4만큼 숫자 채움 -> 겉에 다 채움
@@ -54,7 +51,6 @@ public class Solution {
     {
         Solution solution = new Solution();
         int n = 6;
-
         System.Console.WriteLine(String.Join(", ", solution.solution(n)));
     }
 }
